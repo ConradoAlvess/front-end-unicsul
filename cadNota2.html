@@ -4,8 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de notas</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            background-color: rgb(128, 113, 113);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .containerLi{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: rgb(255, 246, 246); 
+        }
+
+        ul{
+            padding-left: 0%;
+            margin: 10px;
+        }
+        li{
+            
+            width: 100px;
+            padding: 10px;
+            border: 1px solid black;
+            list-style: none;
+            
+        }
+        p{
+            background-color: rgb(0, 0, 107);
+            border: 1px solid black;
+            text-align: center;
+            margin: 0;
+            padding: 10px 0;
+        }
+        .linha1{
+            background-color: rgb(50, 50, 141);
+        }
+        .linha2{
+            background-color: rgb(112, 112, 161);
+        }
+
+        .btn-container{
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        button{
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
+    <div class="containerLi">
+        <ul>
+            <p>ALUNO</p>
+            <li class="linha1">Nota 1</li>
+            <li class="linha2">Nota 2</li>
+        </ul>
+    
+        <ul>
+            <p id="nomeAluno"></p>
+            <li id="nota1" class="linha1"></li>
+            <li id="nota2" class="linha2"></li>
+        </ul>
+        
+        
+    </div>
+    <div class="btn-container"></div>
+        <button onclick="calcularMedia()">Calcular Média</button>
+        <h3 id="resp"></h3>
+    </div>
+    
     
 </body>
     <script src="script2.js"></script>
