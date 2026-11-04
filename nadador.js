@@ -1,6 +1,6 @@
 function catNadador(){
     nomeNadador = document.getElementById('nomeNadador').value;
-    idadeNadador = document.getElementById('idadeNadador').value;
+    idadeNadador = parseInt(document.getElementById('idadeNadador').value);
 
     if (idadeNadador >= 5 && idadeNadador <= 7){
         document.getElementById('resp').innerHTML = 'Nadador: '+nomeNadador+'<br> Idade: '+idadeNadador+'<br> Categoria: Infantil A'
