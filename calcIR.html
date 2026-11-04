@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imposto de renda</title>
+    <style>
+        .container-principal{
+            display: grid;
+            width: 400px;
+            justify-content: center;
+            margin: 200px 650px;
+        }
+
+        button{
+            width: 160px;
+            border-radius: 10px;
+            margin-left: 90px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-principal">
+        <h1>Calculo imposto de renda</h1>
+        <label for="altura">Registro:</label>
+        <input type="text" id="altura" placeholder="Ex: R.01/Mat.000001">
+        <label for="peso">Nome:</label>
+        <input type="text" id="peso" placeholder="Ex: Mario Lima" >
+        <label for="salario">Salário:</label>
+        <input type="text" id="salario" placeholder="Ex: 2000">
+        <br>
+        <button onclick="calcIr()">Calcular IR</button>
+        <label for="ir">Imposto de Renda:</label>
+        <input type="text" id="ir">
+    
+</body>
+    <script src="ir.js"></script>
+</html>
