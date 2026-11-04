@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Nadador</title>
+    <style>
+        *{
+            background-color: silver;
+            padding: auto;
+            margin: 0;
+        }
+
+        .container-principal{
+            display: grid;
+            justify-content: center;
+            padding: 10px;
+            margin: 300px 300px;
+            width: 20%;
+        }
+        input{
+            background-color: aliceblue;
+            border: none;
+            border-radius: 10px;
+            padding: 4px;
+            font-size: 18px;
+        }
+        label{
+            font-size: 18px;
+        }
+        button{
+            border-radius: 20px;
+            width: 200px;
+            height: 30px;
+            font-size: 18px;
+        }
+        button:hover{
+            background-color: rgb(115, 212, 115);
+            transition: 1.5s;
+        }
+        h3{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-principal">
+        <label for="altura">Digite sua altura:</label>
+        <input type="text" id="altura">
+        <label for="peso">Digite seu peso:</label>
+        <input type="text" id="peso">
+        <label for="peso">Digite seu sexo:</label>
+        <input type="text" id="peso">
+        <br>
+        <button onclick="">Descubre a categoria</button>
+        <h3 id="resp"></h3>
+    </div>
+</body>
+    <script src="Imc.js"></script>
+</html>
